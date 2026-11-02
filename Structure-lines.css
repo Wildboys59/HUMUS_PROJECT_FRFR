@@ -1,0 +1,49 @@
+main {
+    div.two-column-layout {
+        display: flex;
+        /*grid-template-columns:1fr 1fr;*/
+        height: 100%;
+
+        .column {
+            /*border: 1px solid black;*/
+            height: 100%;
+            flex-direction: column;
+
+            &.border {
+                border-left: 1px black dashed;
+                padding-left: 2rem;
+                padding-right: 1rem;
+            }
+
+            .facility {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                padding: 0 12px;
+            }
+
+            .people-type-indicator {
+                flex-grow: 1;
+            }
+
+            .people {
+                display: flex;
+                flex-direction: column;
+                padding-block: 1rem 1rem;
+
+                .title2 {
+                    font-size: .75rem;
+                    font-weight: 300;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-style: italic;
+                }
+
+                .information {
+                    font-size: .875rem;
+                    font-weight: 300;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+        }
+    }
+}
